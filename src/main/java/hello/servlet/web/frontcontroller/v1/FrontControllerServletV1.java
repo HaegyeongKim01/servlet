@@ -17,7 +17,7 @@ import hello.servlet.web.frontcontroller.v1.controller.MemberListControllerV1;
 public class FrontControllerServletV1 extends HttpServlet {
 
     //매핑 정보
-    private Map<String, ControllerV1> controllerMap = new HashMap<>();
+    private final Map<String, ControllerV1> controllerMap = new HashMap<>();
 
     public FrontControllerServletV1() {
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
